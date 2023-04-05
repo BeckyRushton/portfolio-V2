@@ -1,0 +1,18 @@
+@import "../../styles/_variables.scss";
+.header {
+  background-color: $background-colour;
+
+  &__title {
+    color: $title-text-colour;
+    font-family: $title-font;
+    font-size: 4rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title:hover {
+    color: $selector-colour;
+    transition: 400ms;
+  }
+}
