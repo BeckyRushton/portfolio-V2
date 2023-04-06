@@ -142,7 +142,19 @@
     }
   }
 }
-
+.projects-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-family: $title-font;
+    color: $title-text-colour;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .footer-container {
   padding: 20px;
   background-color: $body-text-colour;

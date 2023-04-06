@@ -1,0 +1,28 @@
+@import "../../styles/_variables.scss";
+
+.default-button {
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px $selector-colour;
+  border: solid 2px $title-text-colour;
+  background-color: $colour-white;
+  color: $title-text-colour;
+  font-size: 1.3rem;
+  font-family: $title-font;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.default-button:hover {
+  border: solid 2px $selector-colour;
+  color: $selector-colour;
+  box-shadow: 5px 5px 5px $title-text-colour;
+  transition: 400ms;
+  font-size: 1.5rem;
+}

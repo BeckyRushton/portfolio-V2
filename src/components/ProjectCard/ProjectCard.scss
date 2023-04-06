@@ -1,0 +1,22 @@
+@import "../../styles/_variables.scss";
+.project-card {
+  border: 2px solid $title-text-colour;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px $selector-colour;
+  margin: 10px;
+
+  &__info {
+    font-family: $body-font;
+    color: $body-text-colour;
+    &--title {
+      font-family: $title-font;
+      color: $title-text-colour;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

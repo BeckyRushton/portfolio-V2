@@ -15,31 +15,44 @@ import CVImg from "../../assets/images/icons/cv.png";
 import GitHubImg from "../../assets/images/icons/github.png";
 import LinkedInImg from "../../assets/images/icons/linkedin.png";
 import CodeHeart from "../../assets/images/personalisation/girlcode.png";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import projectData from "../../data/ProjectData";
 
 const Main = () => {
+  const populateProjects = projectData.map((project, index) => {
+    return (
+      <div key={index}>
+        <ProjectCard project={project} />
+      </div>
+    );
+  });
   return (
     <div className="main-container">
       <div className="intro-container">
-        <div class="intro-container__text">
-          <p class="intro-container__tagline">Hey! I'm Becky Rushton 💁🏼‍♀️</p>
-          <h1 class="intro-container__title">
+        <div className="intro-container__text">
+          <p className="intro-container__tagline">Hey! I'm Becky Rushton 💁🏼‍♀️</p>
+          <h1 className="intro-container__title">
             <span id="highlighter">
               Junior Software Developer based in London, UK.
             </span>
           </h1>
         </div>
         <img
-          class="intro-container__artwork"
+          className="intro-container__artwork"
           src={IntroImg}
           alt="Female with laptop and coding symbol in speech bubble"
         />
       </div>
       <div className="about-container">
-        <h3 class="about__title">About Me</h3>
-        <div class="about__image">
-          <img class="about__image--pic" src={BeckyImg} alt="profile owner" />
+        <h3 className="about__title">About Me</h3>
+        <div className="about__image">
+          <img
+            className="about__image--pic"
+            src={BeckyImg}
+            alt="profile owner"
+          />
         </div>
-        <p class="about__text">
+        <p className="about__text">
           Originally from Wales, I am a 27-year-old living in greater London
           with my rescue cat, Fig. A crochet enthusiast with a background in
           communications and gender and cultural studies, I have combined my
@@ -48,60 +61,60 @@ const Main = () => {
           beautifully designed websites and functional applications as well as
           contributing to the representation of female coders in the
           ever-changing tech industry.
-          <span class="about__hashtag"> #WomenInStem</span>
+          <span className="about__hashtag"> #WomenInStem</span>
         </p>
       </div>
       <div className="skills-container">
-        <h3 class="skills-container__title">Technical Skills</h3>
+        <h3 className="skills-container__title">Technical Skills</h3>
 
-        <div class="skills-container__icons">
+        <div className="skills-container__icons">
           <img
-            class="skills-container__icons--spring"
+            className="skills-container__icons--spring"
             src={SpringImg}
             alt="Spring Boot Icon"
           />
           <img
-            class="skills-container__icons--java"
+            className="skills-container__icons--java"
             src={JavaImg}
             alt="Java Icon"
           />
           <img
-            class="skills-container__icons--react"
+            className="skills-container__icons--react"
             src={ReactImg}
             alt="React Icon"
           />
           <img
-            class="skills-container__icons--bem"
+            className="skills-container__icons--bem"
             src={BemImg}
             alt="BEM Icon"
           />
           <img
-            class="skills-container__icons--scss"
+            className="skills-container__icons--scss"
             src={SASSImg}
             alt="SCSS Icon"
           />
           <img
-            class="skills-container__icons--javascript"
+            className="skills-container__icons--javascript"
             src={JavascriptImg}
             alt="JavaScript Icon"
           />
           <img
-            class="skills-container__icons--css"
+            className="skills-container__icons--css"
             src={CSSImg}
             alt="CSS Icon"
           />
           <img
-            class="skills-container__icons--html"
+            className="skills-container__icons--html"
             src={HTMLImg}
             alt="HTML Icon"
           />
           <img
-            class="skills-container__icons--git"
+            className="skills-container__icons--git"
             src={GitImg}
             alt="Git Icon"
           />
         </div>
-        <p class="skills-container__text">
+        <p className="skills-container__text">
           During my training with _nology I've learned a variety of key
           programming languages and processes shown above. I have a strong
           affinity towards JavaScript, React and SCSS and my particular
@@ -109,12 +122,15 @@ const Main = () => {
           styling.
         </p>
       </div>
-      <div className="project-container"></div>
+      <div className="project-container">
+        <h3 className="projects-container__title">Projects</h3>
+        <div className="projects-container__cards">{populateProjects}</div>
+      </div>
       <div className="footer-container">
-        <div class="footer-container__icons">
+        <div className="footer-container__icons">
           <a href="https://github.com/BeckyRushton" target="_blank">
             <img
-              class="footer-container__icons--git"
+              className="footer-container__icons--git"
               src={GitHubImg}
               alt="GitHub Icon"
             />
@@ -125,28 +141,28 @@ const Main = () => {
             target="_blank"
           >
             <img
-              class="footer-container__icons--linkedin"
+              className="footer-container__icons--linkedin"
               src={LinkedInImg}
               alt=" Linkedin Icon"
             />
           </a>
           <a href="#">
             <img
-              class="footer-container__icons--cv"
+              className="footer-container__icons--cv"
               src={CVImg}
               alt="CV Icon"
             />
           </a>
         </div>
         <img
-          class="footer-container__code-heart"
+          className="footer-container__code-heart"
           src={CodeHeart}
           alt="girl-code-heart"
         />
-        <div class="footer-container__info">
-          <p class="footer-container__info--tagline">Get in touch</p>
+        <div className="footer-container__info">
+          <p className="footer-container__info--tagline">Get in touch</p>
           <a
-            class="footer-container__info--email"
+            className="footer-container__info--email"
             href="mailto:someone@example.com"
           >
             beckyrushton30@gmail.com
