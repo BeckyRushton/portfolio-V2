@@ -1,18 +1,29 @@
 @import "../../styles/_variables.scss";
-.header {
-  background-color: $background-colour;
 
-  &__title {
-    color: $title-text-colour;
-    font-family: $title-font;
-    font-size: 4rem;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 375px) {
+  .header {
+    display: none;
   }
-  &__title:hover {
-    color: $selector-colour;
-    transition: 400ms;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: $background-colour;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      color: $title-text-colour;
+      font-family: $title-font;
+      font-size: 3rem;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title:hover {
+      color: $selector-colour;
+      transition: 400ms;
+    }
   }
 }

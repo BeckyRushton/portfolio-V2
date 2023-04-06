@@ -5,7 +5,8 @@ import PageHeader from "../../containers/PageHeader/PageHeader";
 const Projects = () => {
   return (
     <div>
-      <PageHeader /> Projects
+      <PageHeader />
+      Projects
     </div>
   );
 };
