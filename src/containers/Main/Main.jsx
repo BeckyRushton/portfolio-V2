@@ -44,83 +44,90 @@ const Main = () => {
         />
       </div>
       <div className="about-container">
-        <h3 className="about__title">About Me</h3>
-        <div className="about__image">
-          <img
-            className="about__image--pic"
-            src={BeckyImg}
-            alt="profile owner"
-          />
+        <div className="about-container-top">
+          <h3 className="about-container__title">About Me</h3>
         </div>
-        <p className="about__text">
-          Originally from Wales, I am a 27-year-old living in greater London
-          with my rescue cat, Fig. A crochet enthusiast with a background in
-          communications and gender and cultural studies, I have combined my
-          passion for media and design to pursue a career in software
-          development. My goal is to become a full-stack developer, creating
-          beautifully designed websites and functional applications as well as
-          contributing to the representation of female coders in the
-          ever-changing tech industry.
-          <span className="about__hashtag"> #WomenInStem</span>
-        </p>
+        <div className="about-container-bottom">
+          <div className="about-container__image">
+            <img
+              className="about-container__image--pic"
+              src={BeckyImg}
+              alt="profile owner"
+            />
+          </div>
+          <p className="about-container__text">
+            Originally from Wales, I am a 27-year-old living in greater London
+            with my rescue cat, Fig. A crochet enthusiast with a background in
+            communications and gender and cultural studies, I have combined my
+            passion for media and design to pursue a career in software
+            development. My goal is to become a full-stack developer, creating
+            beautifully designed websites and functional applications as well as
+            contributing to the representation of female coders in the
+            ever-changing tech industry.
+            <span className="about-container__hashtag">#WomenInStem</span>
+          </p>
+        </div>
       </div>
       <div className="skills-container">
-        <h3 className="skills-container__title">Technical Skills</h3>
-
-        <div className="skills-container__icons">
-          <img
-            className="skills-container__icons--spring"
-            src={SpringImg}
-            alt="Spring Boot Icon"
-          />
-          <img
-            className="skills-container__icons--java"
-            src={JavaImg}
-            alt="Java Icon"
-          />
-          <img
-            className="skills-container__icons--react"
-            src={ReactImg}
-            alt="React Icon"
-          />
-          <img
-            className="skills-container__icons--bem"
-            src={BemImg}
-            alt="BEM Icon"
-          />
-          <img
-            className="skills-container__icons--scss"
-            src={SASSImg}
-            alt="SCSS Icon"
-          />
-          <img
-            className="skills-container__icons--javascript"
-            src={JavascriptImg}
-            alt="JavaScript Icon"
-          />
-          <img
-            className="skills-container__icons--css"
-            src={CSSImg}
-            alt="CSS Icon"
-          />
-          <img
-            className="skills-container__icons--html"
-            src={HTMLImg}
-            alt="HTML Icon"
-          />
-          <img
-            className="skills-container__icons--git"
-            src={GitImg}
-            alt="Git Icon"
-          />
+        <div className="skills-container-top">
+          <h3 className="skills-container__title">Technical Skills</h3>
         </div>
-        <p className="skills-container__text">
-          During my training with _nology I've learned a variety of key
-          programming languages and processes shown above. I have a strong
-          affinity towards JavaScript, React and SCSS and my particular
-          strengths are organised, dry code, Github version control, and sleek
-          styling.
-        </p>
+        <div className="skills-container-bottom">
+          <div className="skills-container__icons">
+            <img
+              className="skills-container__icons--spring"
+              src={SpringImg}
+              alt="Spring Boot Icon"
+            />
+            <img
+              className="skills-container__icons--java"
+              src={JavaImg}
+              alt="Java Icon"
+            />
+            <img
+              className="skills-container__icons--react"
+              src={ReactImg}
+              alt="React Icon"
+            />
+            <img
+              className="skills-container__icons--bem"
+              src={BemImg}
+              alt="BEM Icon"
+            />
+            <img
+              className="skills-container__icons--scss"
+              src={SASSImg}
+              alt="SCSS Icon"
+            />
+            <img
+              className="skills-container__icons--javascript"
+              src={JavascriptImg}
+              alt="JavaScript Icon"
+            />
+            <img
+              className="skills-container__icons--css"
+              src={CSSImg}
+              alt="CSS Icon"
+            />
+            <img
+              className="skills-container__icons--html"
+              src={HTMLImg}
+              alt="HTML Icon"
+            />
+            <img
+              className="skills-container__icons--git"
+              src={GitImg}
+              alt="Git Icon"
+            />
+          </div>
+          <p className="skills-container__text">
+            During my training with _nology I've learned a variety of key
+            programming languages and processes shown above. I have a strong
+            affinity towards JavaScript, React and SCSS and my particular
+            strengths are organised, dry code, Github version control, and sleek
+            styling.
+          </p>
+        </div>
       </div>
       <div className="project-container">
         <h3 className="projects-container__title">Projects</h3>
