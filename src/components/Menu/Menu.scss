@@ -2,7 +2,7 @@
 .menu-options {
   font-family: $body-font;
   color: $title-text-colour;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,5 +13,10 @@
   &__contact:hover {
     color: $selector-colour;
     transition: 400ms;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-options {
+    font-size: 1.5rem;
   }
 }

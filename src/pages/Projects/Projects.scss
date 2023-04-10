@@ -1,0 +1,26 @@
+@import "../../styles/_variables.scss";
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  &__title {
+    font-size: 2rem;
+    font-family: $title-font;
+    color: $title-text-colour;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

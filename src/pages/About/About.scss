@@ -1,0 +1,109 @@
+@import "../../styles/_variables.scss";
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    font-family: $title-font;
+    color: $title-text-colour;
+    margin-top: 20px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $body-font;
+    color: $body-text-colour;
+    font-size: 1rem;
+    width: 90%;
+    padding: 20px;
+  }
+
+  &__hashtag {
+    font-weight: bold;
+    color: $selector-colour;
+    font-size: 1.4rem;
+    text-align: start;
+  }
+  &__hashtag:hover {
+    transition: 400ms;
+    color: $title-text-colour;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    &--pic {
+      border-radius: 10px;
+      width: 60%;
+      box-shadow: 5px 5px 10px $title-text-colour;
+    }
+    &--pic:hover {
+      box-shadow: 5px 5px 10px $selector-colour;
+      transition: 400ms;
+    }
+  }
+  &__list {
+    font-family: $body-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--title {
+      font-family: $title-font;
+      color: $title-text-colour;
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 10px;
+    }
+    &--points {
+      list-style: none;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    &__image {
+      width: 50%;
+      &--pic {
+        width: 95%;
+      }
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+    &__hashtag {
+      font-size: 2rem;
+    }
+    &__list {
+      margin-top: 10px;
+      &--title {
+        font-size: 2rem;
+        padding: 20px;
+      }
+      &--points {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

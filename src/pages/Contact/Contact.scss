@@ -1,0 +1,75 @@
+@import "../../styles/_variables.scss";
+.contact {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    font-family: $title-font;
+    color: $title-text-colour;
+    margin-top: 20px;
+  }
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--pic1 {
+      width: 90%;
+    }
+    &--pic2 {
+      width: 70%;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-family: $body-font;
+    font-size: 1.2rem;
+    color: $body-text-colour;
+    background-color: $background-colour;
+    border: 1px dashed $selector-colour;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px $title-text-colour;
+    margin: 20px;
+
+    &--icons {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+#email-span {
+  font-family: $title-font;
+  color: $selector-colour;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+#email-span:hover {
+  color: $title-text-colour;
+  transition: 400ms;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 0px 20px;
+    &__info {
+      font-size: 1.6rem;
+    }
+    &__image--pic1 {
+      width: 70%;
+    }
+    &__image--pic2 {
+      width: 50%;
+    }
+  }
+  #email-span {
+    font-size: 1.8rem;
+  }
+}

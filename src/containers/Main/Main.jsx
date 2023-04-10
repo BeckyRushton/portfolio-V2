@@ -11,12 +11,9 @@ import JavaImg from "../../assets/images/icons/java-icon.png";
 import JavascriptImg from "../../assets/images/icons/javascript-icon.png";
 import SpringImg from "../../assets/images/icons/springboot-icon.png";
 import ReactImg from "../../assets/images/icons/react-icon.png";
-import CVImg from "../../assets/images/icons/cv.png";
-import GitHubImg from "../../assets/images/icons/github.png";
-import LinkedInImg from "../../assets/images/icons/linkedin.png";
-import CodeHeart from "../../assets/images/personalisation/girlcode.png";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import projectData from "../../data/ProjectData";
+import Footer from "../../components/Footer/Footer";
 
 const Main = () => {
   const populateProjects = projectData.map((project, index) => {
@@ -129,53 +126,11 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="project-container">
+      <div className="projects-container">
         <h3 className="projects-container__title">Projects</h3>
         <div className="projects-container__cards">{populateProjects}</div>
       </div>
-      <div className="footer-container">
-        <div className="footer-container__icons">
-          <a href="https://github.com/BeckyRushton" target="_blank">
-            <img
-              className="footer-container__icons--git"
-              src={GitHubImg}
-              alt="GitHub Icon"
-            />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/becky-rushton-556759172/"
-            target="_blank"
-          >
-            <img
-              className="footer-container__icons--linkedin"
-              src={LinkedInImg}
-              alt=" Linkedin Icon"
-            />
-          </a>
-          <a href="#">
-            <img
-              className="footer-container__icons--cv"
-              src={CVImg}
-              alt="CV Icon"
-            />
-          </a>
-        </div>
-        <img
-          className="footer-container__code-heart"
-          src={CodeHeart}
-          alt="girl-code-heart"
-        />
-        <div className="footer-container__info">
-          <p className="footer-container__info--tagline">Get in touch</p>
-          <a
-            className="footer-container__info--email"
-            href="mailto:someone@example.com"
-          >
-            beckyrushton30@gmail.com
-          </a>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
