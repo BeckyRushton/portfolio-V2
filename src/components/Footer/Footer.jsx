@@ -35,11 +35,14 @@ const Footer = () => {
           />
         </a>
       </div>
-      <img
-        className="footer-container__code-heart"
-        src={CodeHeart}
-        alt="girl-code-heart"
-      />
+      <div className="footer-container__code-heart">
+        <img
+          className="footer-container__code-heart--img"
+          src={CodeHeart}
+          alt="girl-code-heart"
+        />
+      </div>
+
       <div className="footer-container__info">
         <p className="footer-container__info--tagline">Get in touch</p>
         <a

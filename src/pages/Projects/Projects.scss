@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+
   &__title {
     font-size: 2rem;
     font-family: $title-font;
@@ -25,10 +26,8 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .projects {
-    gap: 10px;
-    &__cards {
-      padding: 25px;
-    }
+  .projects__cards {
+    flex-direction: row;
+    padding: 10px;
   }
 }

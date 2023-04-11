@@ -129,13 +129,16 @@
     align-items: center;
     padding: 50px;
     &__text {
-      font-size: 1.7rem;
-      padding: 30px;
+      font-size: 1.6rem;
+      text-align: left;
+    }
+    &__hashtag {
+      font-size: 2.5rem;
     }
     &__image {
-      width: 50%;
+      width: 60%;
       &--pic {
-        width: 90%;
+        width: 96%;
       }
     }
     &__more {
@@ -147,7 +150,7 @@
       &--title {
         font-size: 2.5rem;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 30px;
       }
       &--points {
         font-size: 1.8rem;
@@ -158,6 +161,6 @@
     }
   }
   #girl-coder {
-    width: 95%;
+    width: 100%;
   }
 }

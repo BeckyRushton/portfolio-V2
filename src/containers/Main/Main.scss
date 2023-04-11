@@ -194,6 +194,10 @@
     padding: 20px;
     &__text {
       margin-top: 20px;
+      justify-content: flex-start;
+      text-align: left;
+      align-items: flex-start;
+      padding-right: 50px;
     }
   }
 
@@ -234,8 +238,23 @@
       font-size: 4.5rem;
     }
   }
-  .about-container__text {
-    font-size: 1.4rem;
+  .about-container {
+    &__image {
+      width: 90%;
+      margin: 10px;
+      &--pic {
+        border-radius: 10px;
+        width: 75%;
+        box-shadow: 5px 5px 10px $title-text-colour;
+      }
+    }
+    &__text {
+      font-size: 1.6rem;
+      padding-right: 60px;
+    }
+    &__hashtag {
+      font-size: 2rem;
+    }
   }
   .skills-container__text {
     font-size: 1.6rem;

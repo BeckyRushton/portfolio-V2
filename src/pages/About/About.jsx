@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div>
       <PageHeader />
-      <h2 className="about__title">About Me</h2>
+      <h2 className="about__title">About</h2>
       <div className="about">
         <div className="about__image">
           <img
