@@ -1,64 +1,64 @@
 @import "../../styles/_variables.scss";
-
-.main-container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.intro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-
-  &__text {
+@media screen and (min-width: 375px) {
+  .main-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .intro-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
 
-  &__title {
-    font-family: $title-font;
-    color: $title-text-colour;
-    font-size: 3.5rem;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    &__title {
+      font-family: $title-font;
+      color: $title-text-colour;
+      font-size: 3.5rem;
+      padding: 20px;
+    }
+    &__tagline {
+      font-family: $body-font;
+      color: $body-text-colour;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 20px;
+    }
+    &__artwork {
+      display: none;
+    }
+  }
+  #highlighter {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 65%,
+      $selector-colour 65%
+    );
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 20px;
-  }
-  &__tagline {
-    font-family: $body-font;
-    color: $body-text-colour;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 20px;
-  }
-  &__artwork {
-    display: none;
-  }
-}
-#highlighter {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 65%,
-    $selector-colour 65%
-  );
-}
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
 
-  &__title {
-    font-family: $title-font;
-    font-size: 2rem;
-    color: $title-text-colour;
-    padding-top: 20px;
-    text-align: center;
+    &__title {
+      font-family: $title-font;
+      font-size: 2rem;
+      color: $title-text-colour;
+      padding-top: 20px;
+      text-align: center;
+    }
   }
-
   .about-container {
     &__text {
       display: flex;
@@ -101,65 +101,69 @@
       }
     }
   }
-}
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  padding: 20px;
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
 
-  &__title {
-    font-family: $title-font;
-    font-size: 2rem;
-    padding: 10px;
-    color: $title-text-colour;
-    text-align: center;
-  }
-  &__text {
-    font-family: $body-font;
-    font-size: 1rem;
-    text-align: center;
-    color: $body-text-colour;
-    margin-top: 10px;
-  }
-  &__icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
+    &__title {
+      font-family: $title-font;
+      font-size: 2rem;
+      padding: 10px;
+      color: $title-text-colour;
+      text-align: center;
+    }
+    &__text {
+      font-family: $body-font;
+      font-size: 1rem;
+      text-align: center;
+      color: $body-text-colour;
+      margin-top: 10px;
+    }
+    &__icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
 
-    &--spring,
-    &--bem,
-    &--css,
-    &--scss,
-    &--html,
-    &--java,
-    &--react,
-    &--git,
-    &--javascript {
-      width: 75%;
-      align-self: center;
+      &--spring,
+      &--bem,
+      &--css,
+      &--scss,
+      &--html,
+      &--java,
+      &--react,
+      &--git,
+      &--javascript {
+        width: 75%;
+        align-self: center;
+      }
+    }
+  }
+  .projects-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__cards {
+      justify-content: center;
+    }
+
+    &__title {
+      font-family: $title-font;
+      color: $title-text-colour;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
 }
-.projects-container {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  &__title {
-    font-family: $title-font;
-    color: $title-text-colour;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
 @media screen and (min-width: 768px) {
   .intro-container {
     display: flex;
@@ -218,5 +222,26 @@
       font-size: 1.1rem;
       padding: 20px;
     }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro-container {
+    padding: 50px;
+    &__tagline {
+      font-size: 2rem;
+    }
+    &__title {
+      font-size: 4.5rem;
+    }
+  }
+  .about-container__text {
+    font-size: 1.4rem;
+  }
+  .skills-container__text {
+    font-size: 1.6rem;
+    margin-top: 50px;
+  }
+  .projects-container__cards {
+    padding: 30px 0px;
   }
 }

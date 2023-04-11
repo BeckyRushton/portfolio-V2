@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   &__icons {
     display: flex;
     gap: 5px;
@@ -51,7 +50,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
   }
 }

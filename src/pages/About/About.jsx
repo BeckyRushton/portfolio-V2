@@ -3,6 +3,7 @@ import "./About.scss";
 import PageHeader from "../../containers/PageHeader/PageHeader";
 import Footer from "../../components/Footer/Footer";
 import BeckyImg from "../../assets/images/personalisation/profile.jpg";
+import GirlCoder from "../../assets/images/personalisation/girl-coder.png";
 
 const About = () => {
   return (
@@ -29,19 +30,25 @@ const About = () => {
           <span className="about__hashtag">#WomenInStem</span>
         </p>
       </div>
-      <div className="about__list">
-        <h3 className="about__list--title">
-          When I'm not coding, you can find me...
-        </h3>
-        <ul className="about__list--points">
-          <li>🧶 Crocheting something warm</li>
-          <li>🎥 Watching tv shows on repeat</li>
-          <li>🚶🏼‍♀️ Walking somewhere pretty</li>
-          <li>🐈‍⬛ Cuddling my cat</li>
-          <li>☕ Drinking a giant cup of tea</li>
-          <li>🏘️ Designing houses on The Sims</li>
-        </ul>
+      <div className="about__more">
+        <div className="about__list">
+          <h3 className="about__list--title">
+            When I'm not coding, you can find me...
+          </h3>
+          <ul className="about__list--points">
+            <li>🧶 Crocheting something warm</li>
+            <li>🎥 Watching tv shows on repeat</li>
+            <li>🚶🏼‍♀️ Walking somewhere pretty</li>
+            <li>🐈‍⬛ Cuddling my cat</li>
+            <li>☕ Drinking a giant cup of tea</li>
+            <li>🏘️ Designing houses on The Sims</li>
+          </ul>
+        </div>
+        <div className="about__img">
+          <img src={GirlCoder} alt="woman coding at laptop" id="girl-coder" />
+        </div>
       </div>
+
       <Footer />
     </div>
   );

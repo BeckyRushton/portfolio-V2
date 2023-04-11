@@ -24,3 +24,11 @@
     flex-direction: row;
   }
 }
+@media screen and (min-width: 1024px) {
+  .projects {
+    gap: 10px;
+    &__cards {
+      padding: 25px;
+    }
+  }
+}

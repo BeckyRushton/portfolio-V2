@@ -3,9 +3,9 @@
   border: 2px solid $title-text-colour;
   border-radius: 10px;
   box-shadow: 5px 5px 5px $selector-colour;
-  margin: 20px;
-  height: 500px;
-  width: 330px;
+  margin: 10px;
+  height: 550px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 15px;
+    padding: 10px;
     &--techStack {
       font-size: 1rem;
       color: $selector-colour;
@@ -38,4 +38,13 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#project-image {
+  width: 90%;
+  padding: 10px 0;
 }

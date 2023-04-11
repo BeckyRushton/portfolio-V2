@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="menu-options">
+      <Link to={"/"} style={{ color: "inherit", textDecoration: "inherit" }}>
+        <p className="menu-options__about">Home</p>
+      </Link>
       <Link
         to={"/about"}
         style={{ color: "inherit", textDecoration: "inherit" }}
