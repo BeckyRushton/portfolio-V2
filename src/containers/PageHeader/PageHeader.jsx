@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 const PageHeader = () => {
   return (
     <div className="header">
-      <Link to={"/"} style={{ color: "inherit", textDecoration: "inherit" }}>
+      <Link
+        to={"/portfolio-V2"}
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
         <h1 className="header__title">Becky Rushton</h1>
       </Link>
 

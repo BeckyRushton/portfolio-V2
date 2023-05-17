@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="menu-options">
-      <Link to={"/"} style={{ color: "inherit", textDecoration: "inherit" }}>
+      <Link
+        to={"/portfolio-V2"}
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
         <p className="menu-options__about">Home</p>
       </Link>
       <Link
