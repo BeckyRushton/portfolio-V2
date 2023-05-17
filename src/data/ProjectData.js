@@ -47,7 +47,7 @@ const projectData = [
     image: javaGame,
     techStack: "Java",
     title: "Card Game",
-    text: "The goal of this project is to create a terminal-based card game built in Java. The user can play Snap as many times as they like using the simple menu and by pressing enter, the user draws a card each turn until they win. ",
+    text: "The goal of this project was to create a terminal-based card game built in Java. The user can play Snap as many times as they like using the simple menu and by pressing enter, the user draws a card each turn until they win. ",
     linkOne: "https://github.com/BeckyRushton/card-game-java",
     linkTwo: "https://github.com/BeckyRushton/card-game-java",
   },
