@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProjectCard.scss";
 import Button from "../Button/Button";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -15,13 +14,9 @@ const ProjectCard = ({ project }) => {
         <p className="project-card__info--text">{project.text}</p>
       </div>
       <div className="project-card__button">
-        <Link
-          to={"/projectpage"}
-          style={{ color: "inherit", textDecoration: "inherit" }}
-          className="project-card__button--code"
-        >
-          <Button buttonText={"Find out more..."} />
-        </Link>
+        <div className="project-card__button--code">
+          <Button buttonText={"Code"} />
+        </div>
       </div>
     </div>
   );
