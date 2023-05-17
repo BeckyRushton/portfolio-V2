@@ -19,9 +19,9 @@ const ProjectPage = ({ projectData }) => {
     <div>
       <PageHeader />
       <div className="project-page">
-        <h2 className="project-page__title">{targetObj.title}</h2>
-        <p className="project-page__about">{targetObj.text}</p>
-        <p className="project-page__techstack">{targetObj.techStack}</p>
+        <h2 className="project-page__title">title</h2>
+        <p className="project-page__about">text</p>
+        <p className="project-page__techstack">techStack</p>
         <div className="project-page__planning">
           <img src="#" alt="drawn out plans of project" />
         </div>
