@@ -17,7 +17,7 @@ function App() {
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route
-            path="/projectpage"
+            path={`/projectpage/:id`}
             element={<ProjectPage projectData={projectData} />}
           ></Route>
         </Routes>
