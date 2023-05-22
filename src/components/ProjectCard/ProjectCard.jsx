@@ -17,6 +17,7 @@ const ProjectCard = ({ project }) => {
       <div className="project-card__button">
         <Link
           to={project.linkOne}
+          target="_blank"
           style={{ color: "inherit", textDecoration: "inherit" }}
           className="project-card__button--code"
         >
@@ -24,6 +25,7 @@ const ProjectCard = ({ project }) => {
         </Link>
         <Link
           to={project.linkTwo}
+          target="_blank"
           style={{ color: "inherit", textDecoration: "inherit" }}
           className="project-card__button--preview"
         >
